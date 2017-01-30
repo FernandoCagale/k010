@@ -1,0 +1,9 @@
+backend/npm-debug.log
+backend/node_modules
+backend/.env
+frontend/npm-debug.log
+frontend/node_modules
+frontend/.env
+frontend/dist
+frontend/app/vendor
+frontend/.tmp

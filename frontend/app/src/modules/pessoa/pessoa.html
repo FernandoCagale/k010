@@ -1,0 +1,39 @@
+<div ng-include="'src/partials/header.html'"></div>
+
+  <form name="form" class="formTemplate" novalidate>
+
+    <div class="title">
+      <h2>Cadastro de Amigos</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <label class="title">Nome</label>
+        <input type="text" name="nome" ng-model="vm.pessoa.nome" class="large" required>
+        <p ng-show="form.nome.$error.required">Nome não informado</p>
+      </div>
+      <div class="col-sm-6">
+        <label class="title">E-mail</label>
+	      <input type="email" name="email" ng-model="vm.pessoa.email" class="large" required/>
+	      <p ng-show="form.email.$error.required">E-mail não informado</p>
+	      <p ng-show="form.email.$error.email">E-mail inválido</p>
+      <div>   
+    </div>
+
+    <br/>
+
+    <div class="row">      
+      <div class="col-sm-offset-2 col-xs-12 col-sm-5">
+        <input type="submit" value="Salvar" ng-click="vm.save(vm.pessoa)" class="form-control" ng-disabled="form.$invalid">
+      </div>
+      <div class="col-xs-12 visible-xs">
+        <br />
+      </div>       
+      <div class="col-xs-12 col-sm-5">
+        <input type="submit" value="Cancelar" ui-sref="pessoas" class="form-control">
+      </div>
+    </div>
+    <br />
+  </form>
+
+<div ng-include="'src/partials/footer.html'"></div>

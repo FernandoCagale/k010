@@ -1,0 +1,7 @@
+SERVER_HOST=localhost
+SERVER_PORT=3000
+
+EMAIL=email@email.com
+EMAIL_PASSWORD=password
+
+URI=mongodb://localhost:27017/K010

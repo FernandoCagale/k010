@@ -1,0 +1,163 @@
+.formTemplate {
+    background-color: #ffffff !important;
+    color: #666666;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    font-family: "Open Sans","Helvetica Neue","Helvetica",Arial,Verdana,sans-serif !important;
+    font-size: 0.8em !important;
+    max-width: 500px !important;
+    min-width: 150px !important;
+    margin: 0 auto;
+}
+
+.formTemplate > div, .formTemplate > .title {
+    margin: 8px;
+}
+
+.formTemplate div.title h2 {
+    margin-left: 27px;
+    font-size: 1.8em !important;
+}
+
+.formTemplate div.title {
+    border-bottom: 1px solid #d0dada;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+@media (min-width: 592px) {
+    .formTemplate {
+        max-width: 500px !important;
+        min-width: 150px !important;
+        font-size: 0.8em !important;
+        margin: 0 auto;
+    }
+    .nav-side-menu {
+        position: relative;
+    }    
+} 
+
+@media (min-width: 656px) {
+    .formTemplate {
+        max-width: 500px !important;
+        min-width: 150px !important;
+        font-size: 0.9em !important;
+        margin: 0 auto;
+    }
+} 
+
+
+@media (min-width: 768px) {
+    .formTemplate {
+        max-width: 550px !important;
+        min-width: 150px !important;
+        font-size: 0.9em !important;
+        margin-right:12px;
+    }
+    .nav-side-menu {
+        position: fixed;
+    }    
+}
+
+@media (min-width: 980px) {
+    .formTemplate {
+        max-width: 550px !important;
+        min-width: 150px !important;
+        font-size: 0.9em !important;
+        margin: 0 auto;
+    }
+
+    .formTemplate div.title h2 {
+        margin-left: 27px;
+        font-size: 2em !important;
+    }
+}
+
+@media (min-width: 1088px) {
+    .formTemplate {
+        max-width: 600px !important;
+        min-width: 150px !important;
+        font-size: 0.9em !important;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1312px) {
+    .formTemplate {
+        max-width: 700px !important;
+        min-width: 150px !important;
+        font-size: 1em !important;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1600px) {
+    .formTemplate {
+        max-width: 800px !important;
+        min-width: 150px !important;
+        font-size: 1em !important;
+        margin: 0 auto;
+    }
+} 
+
+.formTemplate div.submit {
+    text-align: right;
+    vertical-align: middle;
+}
+
+.formTemplate input[type="submit"] {
+    border: medium none;
+    color: #ffffff;
+    margin-right: 25px;
+    opacity: 0.8;
+    padding: 0.5em 1.4em;
+    right: 20px;
+    text-align: center;
+    border-radius: 0
+}
+
+.formTemplate div.submit, .formTemplate div.title {
+    background-color: rgba(0, 0, 0, 0.02);
+    border-top: 1px solid #d0dada;
+    margin: 0;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.formTemplate h2 {
+    font-weight: normal;
+    margin: 0.2em 0;
+}
+
+.formTemplate > div {
+    margin-left: 25px;
+    margin-right: 25px;
+    position: relative;
+}
+
+.formTemplate input[type="submit"] {
+    background-color: #2da5da;
+}
+
+.formTemplate .filter {
+    width: 76%;
+}
+
+.formTemplate .large {
+    width: 100%;
+}
+
+.formTemplate input[type="text"], .formTemplate input[type="password"], .formTemplate input[type="email"], .formTemplate input[type="url"], .formTemplate input[type="date"], .formTemplate input[type="number"], .formTemplate textarea, .formTemplate .element-file .file_text, .formTemplate select, .formTemplate button {
+    -moz-appearance: none;
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #e5e5e5;
+    border-radius: 0;
+    box-sizing: border-box;
+    outline: medium none;
+    padding: 0.4em;
+    resize: none;
+    transition: border-color 0.3s ease 0s;
+}
+
+.formTemplate hr {
+    border-bottom: 1px solid #d0dada;
+}

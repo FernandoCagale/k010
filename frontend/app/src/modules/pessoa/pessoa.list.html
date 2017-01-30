@@ -1,0 +1,54 @@
+<div ng-include="'src/partials/header.html'"></div>
+
+	<form name="form" class="formTemplate" novalidate>
+	  <div class="title">
+	    <h2>Lista de Amigos</h2>
+	  </div>
+
+		<div class="alert alert-danger" role="alert" ng-show="vm.error != null">
+			<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+			{{vm.error}}
+		</div>		
+
+	  <table class="table table-condensed">
+	    <thead>
+	      <tr>
+	        <th style="width: 35px"></th>
+	        <th style="width: 35px"></th>
+	        <th>Nome</th>
+					<th>E-mail</th>
+					<th>Amigo</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr ng-repeat="pessoa in vm.datas">
+					<th>
+					  <a class="fa fa-pencil-square-o" ui-sref="pessoa-id({id:pessoa._id})" data-toggle="tooltip" data-placement="bottom" title="Alteração"/>
+					</th>
+					<th>
+					  <a class="fa fa-times" href ng-click="vm.delete(pessoa._id)" data-toggle="tooltip" data-placement="bottom" title="Exclusão"/>
+					</th>
+					<td>{{pessoa.nome}}</td>
+					<td>{{pessoa.email}}</td>
+					<td>{{pessoa.amigo}}</td>
+				</tr>			
+		</table>
+
+		<br/>
+
+    <div class="row">      
+      <div class="col-sm-offset-6 col-xs-12 col-sm-3">
+        <input type="submit" value="Sortear" ng-click="vm.drawing()" class="form-control" ng-disabled="form.$invalid">
+      </div>
+      <div class="col-xs-12 visible-xs">
+        <br />
+      </div>       
+      <div class="col-xs-12 col-sm-3">
+        <input type="submit" value="Incluir" ui-sref="pessoa" class="form-control"/>
+			</div>
+		</div>
+
+	  <br/>
+	</form>
+
+<div ng-include="'src/partials/footer.html'"></div>
